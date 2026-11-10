@@ -15,3 +15,7 @@ jobs:
         with:
           python-version: '3.13'
       - run: python scripts/validate_skill.py
+      - name: Status script smoke test (exit 0 or 1 is a valid report; 2 is a failure)
+        shell: bash
+        run: |
+          python skills/github-multi-endpoint/scripts/endpoint_status.py . || [ $? -eq 1 ]

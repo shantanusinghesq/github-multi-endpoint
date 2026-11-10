@@ -29,8 +29,9 @@ def validate(root):
             dest = (path.parent / target.split("#", 1)[0]).resolve()
             if not dest.is_relative_to(root.resolve()) or not dest.is_file():
                 errors.append(f"Invalid internal reference: {target}")
-    if not (root / "references" / "checklist.md").is_file():
-        errors.append("Missing checklist")
+    for required in ("references/checklist.md", "references/handoff-record.md", "scripts/endpoint_status.py"):
+        if not (root / required).is_file():
+            errors.append(f"Missing {required}")
     return errors
 
 
