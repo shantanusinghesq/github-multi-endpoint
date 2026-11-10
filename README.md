@@ -11,17 +11,17 @@ GitHub main is the latest integrated, published baseline. Local edits, unpushed 
 Ask Codex with its skill installer:
 
 ```text
-$skill-installer install https://github.com/shantanusinghesq/github-multi-endpoint/tree/v0.1.1/skills/github-multi-endpoint
+$skill-installer install https://github.com/shantanusinghesq/github-multi-endpoint/tree/v0.2.0/skills/github-multi-endpoint
 ```
 
-For the current development version, replace `v0.1.1` with `main`. Inspect the files before installation. If the skill already exists, compare versions and preserve local changes before replacing it. Installation does not enable automatic updates.
+For the current development version, replace `v0.2.0` with `main`. Inspect the files before installation. If the skill already exists, compare versions and preserve local changes before replacing it. Installation does not enable automatic updates.
 
 ### Claude Code
 
 Claude Code reads the same `SKILL.md` package. Clone a reviewed tag, then copy the skill folder into a skills directory.
 
 ```bash
-git clone --depth 1 --branch v0.1.1 https://github.com/shantanusinghesq/github-multi-endpoint.git
+git clone --depth 1 --branch v0.2.0 https://github.com/shantanusinghesq/github-multi-endpoint.git
 ```
 
 Personal install, available in every project (macOS or Linux):
