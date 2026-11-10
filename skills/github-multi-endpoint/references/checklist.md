@@ -45,7 +45,7 @@
 
 ## 6. Repeat at each handoff
 
-- [ ] Sending endpoint: inspect changes, run relevant checks, review and commit intended files, push the active branch, and verify publication. Record repository, branch, commit, validation, outstanding work, and receiving endpoint.
+- [ ] Sending endpoint: inspect changes, run relevant checks, review and commit intended files, push the active branch, and verify publication. Record repository, branch, commit, validation, outstanding work, and receiving endpoint in a [handoff record](handoff-record.md); `scripts/endpoint_status.py --remote` supplies the evidence.
 - [ ] Integrate completed work to main through the agreed process and update local tracking state. Clearly label unfinished work handed off on a topic branch.
 - [ ] Receiving endpoint: inspect and preserve local work first, fetch, select the recorded branch, and update with `git pull --ff-only` when tracking is configured. Verify the expected commit before editing.
 - [ ] If fast-forward fails or local work conflicts, stop automatic synchronization and inspect divergence. Do not force convergence or silently create a merge.

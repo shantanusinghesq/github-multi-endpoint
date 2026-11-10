@@ -53,6 +53,8 @@ Use $github-multi-endpoint to plan a personal GitHub repository shared by my Win
 Use $github-multi-endpoint to audit my three endpoint handoff workflow. Report verified results and mark inaccessible endpoints pending.
 ```
 
+The skill bundles two aids. `scripts/endpoint_status.py` is a read-only report of one endpoint's state (branch, commit, upstream, ahead/behind, uncommitted work, stashes, unpublished branches); it never fetches or modifies the repository, and `--remote` adds a live comparison with the remote branch tip. `references/handoff-record.md` is a template for recording each handoff, with a sending half and a receiving half. Both need only Git and Python 3.
+
 The checklist covers existing history, account ownership, portable files, secrets and generated artifacts, publication, branch policies, endpoint validation, and repeated handoffs. It preserves existing project instructions and default branch names.
 
 ## Limits
